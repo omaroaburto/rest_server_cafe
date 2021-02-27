@@ -8,8 +8,13 @@ class Server{
         this.port = process.env.PORT;
 
         //path rutas
-        this.authPath = '/api/auth';
-        this.userPath = '/api/usuario';
+        this.paths = {
+            authPath:'/api/auth',
+            categoryPath: '/api/category',
+            productPath: '/api/product',
+            searchPath:'/api/search',
+            userPath: '/api/usuario' 
+        } 
         
         //Middlewares
         this.middlewares();
@@ -30,9 +35,11 @@ class Server{
 
     //método de controla las rutas
     routes(){
-        this.app.use(this.authPath, require('../routes/auth'));
-        this.app.use(this.userPath, require('../routes/usuarios'));
-      
+        this.app.use(this.paths.authPath, require('../routes/auth'));
+        this.app.use(this.paths.categoryPath, require('../routes/category'));
+        this.app.use(this.paths.productPath, require('../routes/product'));
+        this.app.use(this.paths.searchPath, require('../routes/search'));
+        this.app.use(this.paths.userPath, require('../routes/usuarios'));
     }
 
     listen(){
