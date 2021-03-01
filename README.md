@@ -1,11 +1,9 @@
 # REST SERVER
 **************************************
-El siguiente proyecto es un REST SERVER de una cafeteria, se utiliza mongodb-
+El siguiente proyecto es un rest server que utiliza las siguientes API'S
 
-<b>Instalacciones<b>
+- API de google sign in
+- API de Cloudinary para subir imágenes
 
-En el archivo package.json encontraras los siguientes paquetes
 
-<a href="https://www.npmjs.com/package/bcryptjs"><b>bcryptjs :</b></a> es un paquete que sirve para encriptar las claves
-
-`npm i bcryptjs`
+El proyecto es un esqueleto para la creación de un rest server
