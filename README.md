@@ -7,3 +7,5 @@ El siguiente proyecto es un rest server que utiliza las siguientes API'S
 
 
 El proyecto es un esqueleto para la creación de un rest server
+
+Necesita instalar las dependencias y crear las variables de entorno en un archivo .env, utilizar el ejemplo el archivo `example.env`
